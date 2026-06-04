@@ -104,6 +104,10 @@
       position: relative;
       text-align: center;
       max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .hero-eyebrow {
       font-size: .68rem;
@@ -154,8 +158,10 @@
     .hero-scroll {
       position: absolute;
       bottom: 2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: fit-content;
       display: flex;
       flex-direction: column;
       align-items: center;
