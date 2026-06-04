@@ -556,19 +556,27 @@
     .video-card-vertical:hover .video-card-label { opacity: 1; }
 
     @media (max-width: 768px) {
-      .video-grid-vertical {
-        grid-template-columns: 1fr;
-        max-width: 360px;
-      }
-    }
+      nav { padding: 1.2rem 1.5rem; }
+      .nav-links { gap: 1.5rem; }
+      .nav-links a { font-size: .6rem; letter-spacing: .12em; }
+      .nav-logo { font-size: .9rem; }
+      section { padding: 4rem 1.5rem; }
+      #about {
         grid-template-columns: 1fr;
         gap: 3rem;
       }
       .about-tag { right: -.5rem; bottom: -.5rem; }
       .about-stats { gap: 1.5rem; }
       footer { flex-direction: column; align-items: flex-start; }
+      .video-grid {
+        max-width: 100%;
+      }
+      .video-grid-vertical {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
       .nav-links { display: none; }
     }
   </style>
